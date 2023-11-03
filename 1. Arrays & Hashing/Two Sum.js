@@ -9,9 +9,9 @@ function zappa(nums,target) {
   const mapObj = new Map();                 //Creates a hashmap, an object with key-pair value
   for (let i = 0; i < nums.length; i++) {
     
-    const complement = target - nums[i]; 
+    const complement = target - nums[i];    
     
-    if(mapObj.has(complement)){
+    if(mapObj.has(complement)){            //'.has','.get' should be used with Map()
        return [mapObj.get(complement),i]   // Return array of indexes
        }
      mapObj.set(nums[i], i);
