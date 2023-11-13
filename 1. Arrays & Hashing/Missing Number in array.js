@@ -7,7 +7,7 @@ function misNum(arr){
   
   let missingNum = [];
   for(let i =arr[0]; i<arr[arr.length-1]; i++){
-    if (arr.indexOf(i) === -1){   //if the index of i is not found that number is pushed into missingNum array
+    if (arr.indexOf(i) === -1){   //if the index of i is not found, that number is pushed into missingNum array
       missingNum.push(i);
       
     }
